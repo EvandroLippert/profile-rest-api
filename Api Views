@@ -1,0 +1,20 @@
+What are API Views?
+
+Allow us to define functions that match the standard HTTP methods:
+    * Get - Retrieve item(s)
+    * Post - Create item
+    * Put - Update item
+    * Delete - Delete item
+    * Patch - Partially update item
+
+
+The API View describes the logic to make API endpoint, then it gives us the most control over the logic
+
+So, it's perfect for implenting complex logic
+
+When to use API Views?
+
+* Need full control over the logic;
+* Processing files and rendering a synchronous response;
+* You are calling other APIs/services;
+* Accessing local files or data.
