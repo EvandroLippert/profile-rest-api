@@ -29,7 +29,7 @@ The third argument is the base name. This is going to be used for retrieving
 the URLs in our router.
 """
 router.register('hello-viewset', views.HelloViewSet, base_name='hello-viewset')
-
+router.register('profile', views.UserProfileViewSet)
 """
 Finally, we need to add the path at the urlpatterns
 """
