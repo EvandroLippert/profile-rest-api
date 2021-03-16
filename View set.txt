@@ -1,0 +1,72 @@
+View Set
+
+View Sets allow us to write the logic for our endpoints.
+However, instead of defining functions which map to HTTP methods,
+view sets accept functions that map to common API object actions
+such as list for getting a list of objects.
+
+Example:
+
+API View:
+
+class API_View(APIView):
+
+    def get(...):
+        """list itens"""
+        return ...
+
+    def post(...):
+        """Create an item"""
+        return ...
+
+    def put(...):
+        """Update an entire item"""
+        return ...
+
+    def patch(...):
+        """Update the specified fields of an item"""
+        return ...
+
+    def delete(...):
+        """Delete an item"""
+        return ...
+
+ViewSet:
+
+class View_Set(...):
+
+    def list(...):
+        """List itens"""
+        return ...
+
+    def create(...):
+        """Create an item"""
+        return ...
+
+    def retrieve(...):
+        """Retrieve an item"""
+        return ...
+
+    def update(...):
+        """Update an item"""
+        return ...
+
+    def partial_update(...):
+        """Update part of an item"""
+        return ...
+
+    def destroy(...):
+        """Delete an item"""
+        return ...
+
+ViewSet can take care of a lot of typical logic.
+It is perfect for standard db operations
+And it is the fastest way to make a database interface.
+
+WHEN TO USE VIEWSETS?
+
+You should use ViewSet over APIView when:
+    * You will build a simple CRUD interface to your database;
+    * A quick and simple API;
+    * Little to no customization on the logic;
+    * Working with standard data structures
