@@ -30,6 +30,7 @@ the URLs in our router.
 """
 router.register('hello-viewset', views.HelloViewSet, base_name='hello-viewset')
 router.register('profile', views.UserProfileViewSet)
+router.register('feed', views.UserProfileFeedViewSet)
 """
 Finally, we need to add the path at the urlpatterns
 """
